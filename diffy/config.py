@@ -46,6 +46,7 @@ def consume_envvars(defaults: dict) -> dict:
             except ValueError:
                 pass
         defaults[k] = v
+
     return defaults
 
 
@@ -207,6 +208,7 @@ DEFAULTS = {
     'SWAG_TYPE': 's3',
     'SWAG_BUCKET_NAME': None,
     'SWAG_DATA_FILE': 'v2/accounts.json',
+    'RQ_REDIS_URL': ''
 }
 
 
